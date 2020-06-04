@@ -10,6 +10,7 @@
     </v-card>
     <v-card>
       <v-card-text>NOTAS DE CAFÉ</v-card-text>
+      <h1>BJSDBGJSKB</h1>
     </v-card>
   </v-app>
 
