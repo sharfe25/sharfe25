@@ -1,5 +1,4 @@
 <template>
-
         <v-app-bar
                 color="amber darken-1"
                 dense
@@ -13,7 +12,7 @@
             <v-btn text x-large>Productos</v-btn>
             <v-btn text x-large>Menú</v-btn>
             <v-btn icon>
-                <v-icon>email</v-icon>
+                <v-icon color="white">mdi-email</v-icon>
             </v-btn>
 
         </v-app-bar>
