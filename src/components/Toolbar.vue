@@ -5,7 +5,7 @@
                 dark
         >
 
-            <v-toolbar-title>EL CAMINANTE</v-toolbar-title>
+            <v-toolbar-title class="font-weight-thin">EL CAMINANTE</v-toolbar-title>
 
             <v-spacer></v-spacer>
             <v-btn text x-large>Home</v-btn>
