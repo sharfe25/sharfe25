@@ -1,33 +1,24 @@
 <template>
   <v-app>
-    <Galeria/>
+    <v-carousel cycle
+                show-arrows-on-hover
+                height="auto">
+      <v-carousel-item v-for="(foto,index) in fotos" :key="index" :src="foto.src" class="galeria" max-height="600" contain >
+      </v-carousel-item>
+    </v-carousel>
+    <cards/>
     <v-parallax
-            height="500"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20180910152617-Juanvaldezadiosmexico.jpeg"
-
-    ><h1 class="text-center">NOTAS DE CAFÉ</h1>
-      <v-row>
-        <v-col cols="6">
-          <v-card>
-            <v-row justify="space-between">
-              <v-col cols="6">
-                <v-img
-                        class="ma-0"
-                        height="300"
-                        width="300"
-                        src="https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/90089545_535114490480459_3129998590359331526_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=111&_nc_ohc=o6KhGst_6ZUAX_MhpK_&oh=26fe457b38c01b6281cd92def304b8f4&oe=5F04467F"
-                ></v-img>
-              </v-col>
-              <v-col
-                      cols="6"
-                      class="text-center pl-0">
-                <h1>Respondiendo al coronavirus</h1>
-                <p>Estas son nuestras medidas y protocolos para responder a la coyuntura del COVID-19.</p>
-                <v-btn class="ma-2" outlined color="amber">Ver más</v-btn>
-              </v-col>
-            </v-row>
-
-          </v-card>
+            src="https://cdn.foodandwineespanol.com/2020/01/destacada_dom-scaled.jpg" height="300">
+      <v-row justify="center" align="center">
+        <v-col cols="auto">
+          <h1 class="text-center mt-5">NUESTRA COMUNIDAD</h1>
+        </v-col>
+      </v-row>
+      <v-row justify="center" align="start">
+        <v-col cols="auto">
+          <v-btn class="mx-2 mb-2 justify-center" fab large color="grey lighten-1" v-for="icon in icons" :href="icon.src" target="_blank">
+            <v-icon x-large color="black">{{icon.logo}}</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
     </v-parallax>
@@ -37,11 +28,37 @@
 
 <script>
 // @ is an alias to /src
-import Galeria from "@/components/Galeria";
+
+import Cards from "../components/Cards";
 export default {
   name: 'Home',
   components: {
-    Galeria
+    Cards,
+  },
+  data(){
+    return{
+      icons:[
+        {logo:'mdi-facebook',src:'https://www.facebook.com/elcamiantecafe/'},
+        {logo:'mdi-twitter', src:'https://twitter.com/elcaminantecafe?lang=es'},
+        {logo:'mdi-linkedin', src:'https://es.linkedin.com/company/cultura-de-cafe-sas?trk=similar-pages_result-card_full-click'},
+        {logo:'mdi-instagram',src:'https://www.instagram.com/elcaminante_cafe/?hl=es-la'},
+      ],
+      fotos:[
+        {src:'https://www.juanvaldezcafe.com/sites/default/files/familias-cafeteras-desktop2.jpg'},
+        //{src:require('C:\\Users\\Sharon\\Desktop\\web\\vue_CLI\\el_caminante\\src\\assets\\galeriap.png')},
+        //{src: require('C:\Users\Sharon\Desktop\web\vue_CLI\el_caminante\src\assets\galeria_prueba.png')}
+
+      ]
+    }
+  },
+  methods:{
+
   }
 }
 </script>
+<style scoped>
+  .galeria{
+    width:auto;
+    height:auto
+  }
+</style>
