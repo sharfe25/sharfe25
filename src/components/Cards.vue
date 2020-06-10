@@ -4,7 +4,7 @@
                 height="auto"
                 :src="require('@/assets/fondocafee.png')"
 
-        ><h1 class="text-center font-weight-thin display-2 pa-1">NOTAS DE CAFÉ</h1>
+        ><h1 class="text-center font-weight-thin display-2 pa-1 ">NOTAS DE CAFÉ</h1>
             <p class="text-center font-weight-light px-2">Una cosecha única para los amantes del café</p>
             <v-row>
                 <v-col cols="12" md="6" >
