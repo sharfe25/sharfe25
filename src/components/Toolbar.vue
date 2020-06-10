@@ -13,17 +13,17 @@
             </div>
 
             <v-spacer></v-spacer>
-            <div class="text x-large">
-                <v-btn>Home</v-btn>
-                <v-btn>Productos</v-btn>
-                <v-btn>Menú</v-btn>
+            <div >
+                <v-btn text class=" x-large">Home</v-btn>
+                <v-btn text class=" x-large">Productos</v-btn>
+                <v-btn text class="x-large">Menú</v-btn>
                 <v-btn icon>
                     <v-icon color="white">mdi-email</v-icon>
                 </v-btn>
             </div>
 
 
-            <v-app-bar-nav-icon ></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon v-if="isMobile"></v-app-bar-nav-icon>
         </v-app-bar>
 
 </template>
@@ -38,7 +38,7 @@
         },
         methods:{
             isMobile() {
-                if()
+                this.$vuetify.breakpoint.xsOnly
             },
         },
     }
