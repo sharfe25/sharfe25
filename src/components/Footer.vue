@@ -1,9 +1,9 @@
 <template>
-    <v-app>
+
         <v-footer
                 padless
                 dark
-                absolute
+
         >
                 <v-row      justify="center"
                             align="center"
@@ -39,7 +39,7 @@
                     <v-col cols="12"
                            md="4" class="pl-12">
                         <div class="ml-7">
-                            <v-btn class="mx-2 " fab small color="amber darken-1" v-for="icon in icons" :href="icon.src" target="_blank">
+                            <v-btn class="mx-2 " fab small color="amber darken-1" v-for="icon in icons" :to="icon.to" target="_blank">
                                 <v-icon>{{icon.logo}}</v-icon>
                             </v-btn>
                         </div>
@@ -47,7 +47,7 @@
                 </v-row>
 
         </v-footer>
-    </v-app>
+
 
 </template>
 
@@ -57,9 +57,9 @@
         data(){
                 return{
                     links:[
-                        {nombre:'Home',src:require('C:\\Users\\Sharon\\Desktop\\web\\vue_CLI\\el_caminante\\src\\views\\Home.vue')},
-                        {nombre:'Productos',src:require('C:\\Users\\Sharon\\Desktop\\web\\vue_CLI\\el_caminante\\src\\views\\Home.vue')},
-                        {nombre:'Menú',src:require('C:\\Users\\Sharon\\Desktop\\web\\vue_CLI\\el_caminante\\src\\views\\Home.vue')}
+                        {nombre:'Home',to:"/"},
+                        {nombre:'Productos',to:"/Productos"},
+                        {nombre:'Menú'}
                     ],
                     icons:[
                         {logo:'mdi-facebook',src:'https://www.facebook.com/elcamiantecafe/'},

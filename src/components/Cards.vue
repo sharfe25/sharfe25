@@ -20,7 +20,7 @@
                                     cols="12"
                                     md="6"
                                     class="text-center pa-0">
-                                <h1 class="font-weight-light subtitle-1 pa-4">Respondiendo al coronavirus</h1>
+                                <h1 class="font-weight-light subtitle-1 pa-4 red--text">Respondiendo al coronavirus</h1>
                                 <p class="font-weight-light body-2 pa-4">Estas son nuestras medidas y protocolos para responder a la coyuntura del COVID-19.</p>
                                 <v-btn class="ma-5 font-italic font-weight-light" outlined color="red darken-1">Ver más</v-btn>
                             </v-col>
@@ -41,7 +41,7 @@
                                     cols="12"
                                     md="6"
                                     class="text-center pa-0">
-                                <h1 class="font-weight-light subtitle-1 pa-4">Tu vaso es el primer paso</h1>
+                                <h1 class="font-weight-light subtitle-1 pa-4 red--text">Tu vaso es el primer paso</h1>
                                 <p class="font-weight-light body-2 pa-4">Ayuda al planeta y toma tu café en el vaso favorito. ¡Tu vaso es el primer paso!</p>
                                 <v-btn class="ma-5 font-italic font-weight-light" outlined color="red darken-1">Ver más</v-btn>
                             </v-col>
@@ -64,7 +64,7 @@
                                     cols="12"
                                     md="6"
                                     class="text-center pa-0">
-                                <h1 class="font-weight-light subtitle-1 pa-4">Nuevo café liofilizado con micromolido</h1>
+                                <h1 class="font-weight-light subtitle-1 pa-4 red--text">Nuevo café liofilizado con micromolido</h1>
                                 <p class="font-weight-light body-2 pa-2">El sabor y aroma de un café recién tostado,
                                     ahora está en nuestro nuevo Liofilizado con Micromolido.</p>
                                 <v-btn class="ma-4 font-italic font-weight-light" outlined color="red darken-1">Ver más</v-btn>

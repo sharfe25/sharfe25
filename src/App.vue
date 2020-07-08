@@ -5,7 +5,6 @@
       <Footer/>
   </v-app>
 </template>
-
 <script>
 
   import Toolbar from "./components/Toolbar";
