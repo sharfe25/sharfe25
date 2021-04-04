@@ -4,12 +4,9 @@
                 dense
                 dark
                 absolute
-
         >
             <div class="mt-8">
-                <v-img class=" pt-12 mt-12 ml-5" src="@/assets/logo (1).png" max-height="120"
-                       max-width="120"
-                       contain></v-img>
+                <v-img class=" pt-12 mt-12 ml-5" src="@/assets/logo (1).png" max-height="120" max-width="120" contain></v-img>
             </div>
 
             <v-spacer></v-spacer>
@@ -21,11 +18,9 @@
                     <v-icon color="white">mdi-email</v-icon>
                 </v-btn>
             </div>
-
-
             <v-app-bar-nav-icon v-if="isMobile"></v-app-bar-nav-icon>
         </v-app-bar>
-
+    
 </template>
 
 <script>

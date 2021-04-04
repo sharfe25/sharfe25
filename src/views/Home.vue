@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <Toolbar/>
     <v-carousel cycle
                 show-arrows-on-hover
                 height="auto">
@@ -16,24 +17,27 @@
       </v-row>
       <v-row justify="center" align="start">
         <v-col cols="auto">
-          <v-btn class="mx-2 mb-2 justify-center" fab large color="grey lighten-1" v-for="icon in icons" :href="icon.src" target="_blank">
+          <v-btn class="mx-2 mb-2 justify-center" fab large color="grey lighten-1" v-for="icon in icons" :key="icon" :href="icon.src" target="_blank">
             <v-icon x-large color="black">{{icon.logo}}</v-icon>
           </v-btn>
         </v-col>
       </v-row>
     </v-parallax>
+    <Footer/>
   </v-app>
 
 </template>
 
 <script>
 // @ is an alias to /src
-
-import Cards from "../components/Cards";
+import Toolbar from "../components/Toolbar.vue";
+import Footer from "../components/Footer.vue";
+import Cards from "../components/Cards.vue";
 export default {
   name: 'Home',
   components: {
-    Cards,
+    Cards, Footer,
+    Toolbar
   },
   data(){
     return{
